@@ -8,31 +8,42 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="flex-cotes">
-          <a class="logo" href="index.html">WIP</a>
-          <nav class="main-nav">
-            <ul class="nav-list">
-              <li><a class="nav-link" href="index.html">Accueil</a></li>
-              <li>
-                <a class="nav-link" href="reservation.html">Reservation</a>
-              </li>
-              <li><a class="nav-link" href="restaurant.html">Restaurant</a></li>
-              <li>
-                <a class="nav-cta" href="commande.html">Ma commande</a>
-              </li>
-            </ul>
-          </nav>
-          <button type="button" class="taco-menu" aria-label="Ouvrir le menu">
-            <img src="WIP" alt="Menu" />
-          </button>
+    <header class="site-header">
+      <div class="container header-layout">
+        <h1 class="brand-text">
+          <a class="brand" href="index.html">
+            <img src="media/logo-calavera.svg" alt="Logo La Calavera" />
+            <span>La Calavera<br />Restaurant mexicain</span>
+          </a>
+        </h1>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+          <ul>
+            <li><a class="active" href="index.html">Accueil</a></li>
+            <li><a href="reservation.html">Réservation</a></li>
+            <li><a href="restaurant.html">Restaurant</a></li>
+            <li><a href="commande.html">Ma commande</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-placeholder">
+        <div class="container">
+          <div class="page-placeholder-box">
+            <h2>Structure de base du site</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
-      </header>
-      <main>
-        <h1>Accueil</h1>
-      </main>
-      <footer>Francisco Villamar</footer>
-    </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <p>La Calavera</p>
+        <p>TP3 - Site responsive</p>
+      </div>
+    </footer>
   </body>
 </html>
