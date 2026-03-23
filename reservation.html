@@ -27,11 +27,101 @@
     </header>
 
     <main>
-      <section class="page-placeholder">
+      <section class="page-hero">
+        <div class="container page-hero-content">
+          <p class="eyebrow">Réserver une table</p>
+          <h1>Planifiez votre prochaine visite</h1>
+          <p>
+            Remplissez le formulaire pour demander une réservation chez La nous!
+          </p>
+        </div>
+      </section>
+
+      <section class="reservation-section">
         <div class="container">
-          <div class="page-placeholder-box">
-            <h2>Page Reservation</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="reservation-card card">
+            <form class="reservation-form" action="#" method="get">
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="prenom">Prénom</label>
+                  <input type="text" id="prenom" name="prenom" required />
+                </div>
+
+                <div class="form-field">
+                  <label for="nom">Nom</label>
+                  <input type="text" id="nom" name="nom" required />
+                </div>
+
+                <div class="form-field">
+                  <label for="telephone">Téléphone</label>
+                  <input type="tel" id="telephone" name="telephone" required />
+                </div>
+
+                <div class="form-field">
+                  <label for="courriel">Courriel</label>
+                  <input type="email" id="courriel" name="courriel" />
+                </div>
+
+                <div class="form-field">
+                  <label for="personnes">Nombre de personnes</label>
+                  <input
+                    type="number"
+                    id="personnes"
+                    name="personnes"
+                    min="1"
+                    max="12"
+                    value="2"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="date">Date</label>
+                  <input type="date" id="date" name="date" required />
+                </div>
+
+                <div class="form-field">
+                  <label for="heure">Heure</label>
+                  <select id="heure" name="heure" required>
+                    <option value="">Choisir une heure</option>
+                    <option value="17h00">17 h 00</option>
+                    <option value="17h30">17 h 30</option>
+                    <option value="18h00">18 h 00</option>
+                    <option value="18h30">18 h 30</option>
+                    <option value="19h00">19 h 00</option>
+                    <option value="19h30">19 h 30</option>
+                    <option value="20h00">20 h 00</option>
+                    <option value="20h30">20 h 30</option>
+                  </select>
+                </div>
+
+                <div class="form-field">
+                  <label for="zone">Zone</label>
+                  <select id="zone" name="zone" required>
+                    <option value="">Choisir une zone</option>
+                    <option value="salle">Salle à manger</option>
+                    <option value="terrasse">Terrasse</option>
+                    <option value="bar">Coin bar</option>
+                  </select>
+                </div>
+
+                <div class="form-field form-field-full">
+                  <label for="commentaire">Commentaire</label>
+                  <textarea
+                    id="commentaire"
+                    name="commentaire"
+                    rows="5"
+                    placeholder="Allergies, occasion spéciale, préférence de place..."
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">
+                  Envoyer la demande
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>

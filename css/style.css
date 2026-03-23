@@ -285,3 +285,90 @@ img {
     flex-direction: column;
   }
 }
+
+
+.page-hero {
+  padding: 4rem 0 2rem;
+}
+
+.page-hero-content {
+  max-width: 760px;
+}
+
+.page-hero h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.05;
+}
+
+.page-hero p:last-child {
+  color: var(--muted);
+}
+
+.reservation-section {
+  padding: 0 0 5rem;
+}
+
+.reservation-card {
+  padding: 2rem;
+}
+
+.reservation-form {
+  width: 100%;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-field-full {
+  grid-column: 1 / -1;
+}
+
+.form-field label {
+  font-weight: 700;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: #fff;
+  color: var(--text);
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.form-field input:focus-visible,
+.form-field select:focus-visible,
+.form-field textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.form-actions {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 570px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reservation-card {
+    padding: 1.25rem;
+  }
+}
