@@ -372,3 +372,139 @@ img {
     padding: 1.25rem;
   }
 }
+
+
+.restaurant-section {
+  padding: 0 0 5rem;
+}
+
+.restaurant-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.restaurant-gallery {
+  flex: 1 1 68%;
+  padding: 1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 120px;
+  gap: 1rem;
+}
+
+.gallery-item {
+  margin: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-item-small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.gallery-item-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery-item-wide {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.gallery-item-tall {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.restaurant-info {
+  flex: 0 1 340px;
+  padding: 1.5rem;
+}
+
+.restaurant-info h2 {
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+}
+
+.contact-details {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-details li {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.contact-details strong {
+  color: var(--accent-dark);
+}
+
+.contact-details span,
+.contact-details a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.contact-details a:hover,
+.contact-details a:focus-visible {
+  color: var(--accent-dark);
+}
+
+.map-card {
+  margin-top: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+@media (max-width: 960px) {
+  .restaurant-layout {
+    flex-direction: column;
+  }
+
+  .restaurant-gallery,
+  .restaurant-info {
+    width: 100%;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 160px;
+  }
+}
+
+@media (max-width: 570px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .gallery-item-small,
+  .gallery-item-large,
+  .gallery-item-wide,
+  .gallery-item-tall {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .gallery-item img,
+  .map-card img {
+    aspect-ratio: 16 / 10;
+  }
+}
