@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="t d">
+<title id="t">Salle colorée</title>
+<desc id="d">Murales et ambiance conviviale</desc>
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#2a2e38"/>
+<stop offset="100%" stop-color="#7d3d3d"/>
+</linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#g)"/>
+<circle cx="860" cy="140" r="90" fill="#fff8f1" opacity="0.12"/>
+<circle cx="1010" cy="240" r="46" fill="#fff8f1" opacity="0.16"/>
+<circle cx="180" cy="660" r="110" fill="#fff8f1" opacity="0.08"/>
+<ellipse cx="600" cy="420" rx="300" ry="190" fill="#fff6ed"/>
+<ellipse cx="600" cy="420" rx="245" ry="145" fill="#e2a545"/>
+<ellipse cx="600" cy="420" rx="190" ry="105" fill="#ffd58f" opacity="0.9"/>
+<circle cx="510" cy="380" r="28" fill="#b43a28"/>
+<circle cx="655" cy="400" r="24" fill="#b43a28"/>
+<circle cx="575" cy="470" r="26" fill="#6c9b3b"/>
+<circle cx="695" cy="460" r="20" fill="#6c9b3b"/>
+<path d="M485 450c85-34 170-34 255 0" fill="none" stroke="#7b3b2a" stroke-width="18" stroke-linecap="round" opacity="0.35"/>
+<text x="70" y="680" font-family="Poppins, Arial, sans-serif" font-size="74" font-weight="700" fill="#fff8f1">Salle colorée</text>
+<text x="70" y="736" font-family="Inter, Arial, sans-serif" font-size="32" fill="#fff8f1">Murales et ambiance conviviale</text>
+</svg>

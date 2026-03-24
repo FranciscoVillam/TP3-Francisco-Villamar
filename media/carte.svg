@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700" role="img" aria-labelledby="t d">
+<title id="t">Carte stylisée</title>
+<desc id="d">Carte abstraite avec point de localisation du restaurant</desc>
+<rect width="900" height="700" fill="#1f2329"/>
+<g stroke="#3d4650" stroke-width="6" opacity="0.9">
+  <path d="M50 120h800"/>
+  <path d="M90 220h700"/>
+  <path d="M40 340h820"/>
+  <path d="M80 500h740"/>
+  <path d="M180 40v620"/>
+  <path d="M360 70v590"/>
+  <path d="M540 30v640"/>
+  <path d="M700 60v600"/>
+  <path d="M90 90l700 500"/>
+  <path d="M810 120L150 610"/>
+</g>
+<g fill="none" stroke="#e9ecef" stroke-width="10">
+  <circle cx="490" cy="380" r="28"/>
+  <path d="M490 332c-32 0-58 25-58 56 0 54 58 118 58 118s58-64 58-118c0-31-26-56-58-56z" fill="#bf5b34" stroke="#fff6ed"/>
+</g>
+<text x="395" y="560" font-family="Poppins, Arial, sans-serif" font-size="46" fill="#fff6ed">Montréal</text>
+</svg>
